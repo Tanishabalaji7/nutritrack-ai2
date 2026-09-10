@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  background-color: #fdf3d9;
+  color: #4a1f30;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.card {
+  @apply bg-creamLight rounded-xl2 shadow-sm p-6;
+}
+
+.btn-primary {
+  @apply bg-plum text-white rounded-full px-5 py-2.5 font-semibold hover:bg-maroonDark transition-colors;
+}
+
+.btn-secondary {
+  @apply bg-blush text-maroonDark rounded-full px-5 py-2.5 font-semibold hover:bg-blushDark transition-colors;
+}
+
+.input-field {
+  @apply w-full rounded-xl border border-blush bg-white/70 px-4 py-2.5 outline-none focus:ring-2 focus:ring-plum;
+}
+
+.progress-track {
+  @apply w-full h-2.5 rounded-full bg-blush/50 overflow-hidden;
+}
+
+.progress-fill {
+  @apply h-full rounded-full bg-plum transition-all;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background: #e9a6a6;
+  border-radius: 8px;
+}
